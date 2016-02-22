@@ -1,0 +1,94 @@
+
+{
+  "response": {
+  "version":"0.1",
+  "termsofService":"http://www.wunderground.com/weather/api/d/terms.html",
+  "features": {
+  "conditions": 1
+  }
+	}
+  ,	"current_observation": {
+		"image": {
+		"url":"http://icons.wxug.com/graphics/wu2/logo_130x80.png",
+		"title":"Weather Underground",
+		"link":"http://www.wunderground.com"
+		},
+		"display_location": {
+		"full":"Durham, NC",
+		"city":"Durham",
+		"state":"NC",
+		"state_name":"North Carolina",
+		"country":"US",
+		"country_iso3166":"US",
+		"zip":"27703",
+		"magic":"1",
+		"wmo":"99999",
+		"latitude":"35.97507858",
+		"longitude":"-78.83918762",
+		"elevation":"109.00000000"
+		},
+		"observation_location": {
+		"full":"NE Durham County, (DW), Durham, North Carolina",
+		"city":"NE Durham County, (DW), Durham",
+		"state":"North Carolina",
+		"country":"US",
+		"country_iso3166":"US",
+		"latitude":"35.988373",
+		"longitude":"-78.829979",
+		"elevation":"316 ft"
+		},
+		"estimated": {
+		},
+		"station_id":"KNCDURHA14",
+		"observation_time":"Last Updated on February 22, 3:48 PM EST",
+		"observation_time_rfc822":"Mon, 22 Feb 2016 15:48:12 -0500",
+		"observation_epoch":"1456174092",
+		"local_time_rfc822":"Mon, 22 Feb 2016 15:49:46 -0500",
+		"local_epoch":"1456174186",
+		"local_tz_short":"EST",
+		"local_tz_long":"America/New_York",
+		"local_tz_offset":"-0500",
+		"weather":"Overcast",
+		"temperature_string":"49.6 F (9.8 C)",
+		"temp_f":49.6,
+		"temp_c":9.8,
+		"relative_humidity":"93%",
+		"wind_string":"From the ESE at 2.0 MPH Gusting to 2.0 MPH",
+		"wind_dir":"ESE",
+		"wind_degrees":102,
+		"wind_mph":2.0,
+		"wind_gust_mph":"2.0",
+		"wind_kph":3.2,
+		"wind_gust_kph":"3.2",
+		"pressure_mb":"1017",
+		"pressure_in":"30.04",
+		"pressure_trend":"0",
+		"dewpoint_string":"48 F (9 C)",
+		"dewpoint_f":48,
+		"dewpoint_c":9,
+		"heat_index_string":"NA",
+		"heat_index_f":"NA",
+		"heat_index_c":"NA",
+		"windchill_string":"50 F (10 C)",
+		"windchill_f":"50",
+		"windchill_c":"10",
+		"feelslike_string":"50 F (10 C)",
+		"feelslike_f":"50",
+		"feelslike_c":"10",
+		"visibility_mi":"6.0",
+		"visibility_km":"9.7",
+		"solarradiation":"--",
+		"UV":"1","precip_1hr_string":"0.37 in ( 9 mm)",
+		"precip_1hr_in":"0.37",
+		"precip_1hr_metric":" 9",
+		"precip_today_string":"0.09 in (2 mm)",
+		"precip_today_in":"0.09",
+		"precip_today_metric":"2",
+		"icon":"cloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/cloudy.gif",
+		"forecast_url":"http://www.wunderground.com/US/NC/Durham.html",
+		"history_url":"http://www.wunderground.com/weatherstation/WXDailyHistory.asp?ID=KNCDURHA14",
+		"ob_url":"http://www.wunderground.com/cgi-bin/findweather/getForecast?query=35.988373,-78.829979",
+		"nowcast":""
+	}
+}
