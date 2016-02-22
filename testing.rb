@@ -42,7 +42,7 @@ class WeatherUndergroundTest < Minitest::Test
   end
 
   def test_alerts_class_exists_and_accepts_a_zip_code
-    durm = Condition.new(zip_code: 27703)
+    durm = Alert.new(zip_code: 27703)
     assert_equal 27703, durm.zip_code
   end
 

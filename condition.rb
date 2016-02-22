@@ -1,7 +1,7 @@
 require 'httparty'
 
 class Condition
-  attr_reader :zip_code, :conditions
+  attr_reader :zip_code, :results
 
   def initialize(zip_code: nil)
     @zip_code = zip_code
