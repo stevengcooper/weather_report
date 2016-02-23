@@ -4,8 +4,8 @@ class Condition
 
   def initialize(location: nil)
     @location = location
-    @results = JSON.parse(File.read('conditions.json'))
-    # @results = HTTParty.get("http://api.wunderground.com/api/#{ENV["WUNDERGROUND_KEY"]}/conditions/q/#{@location}.json")
+    # @results = JSON.parse(File.read('conditions.json'))
+    @results = HTTParty.get("http://api.wunderground.com/api/#{ENV["WUNDERGROUND_KEY"]}/conditions/q/#{@location}.json")
   end
 
   def location
