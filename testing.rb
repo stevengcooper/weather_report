@@ -6,7 +6,7 @@ require './condition.rb'
 require 'httparty'
 # require './current_hurricane.rb'
 require './forecast.rb'
-# require './astronomy.rb'
+require './astronomy.rb'
 require './alerts.rb'
 
 class WeatherUndergroundTest < Minitest::Test
@@ -65,4 +65,13 @@ class WeatherUndergroundTest < Minitest::Test
     assert_equal [["Monday", "Cloudy with rain. Lows overnight in the low 40s."], ["Monday Night", "Rain likely. Low 43F. Winds ENE at 5 to 10 mph. Chance of rain 100%. Rainfall around a half an inch."], ["Tuesday", "Cloudy with rain ending in the afternoon. High 49F. Winds NNE at 5 to 10 mph. Chance of rain 90%."], ["Tuesday Night", "Rain showers in the evening becoming a steady light rain overnight. Low 46F. Winds light and variable. Chance of rain 60%."], ["Wednesday", "Becoming windy with thunderstorms likely. A few storms may be severe. High 69F. Winds SSE at 25 to 35 mph. Chance of rain 90%."], ["Wednesday Night", "Showers in the evening, then partly cloudy overnight. Low 44F. Winds SSW at 15 to 25 mph. Chance of rain 70%."], ["Thursday", "Windy with increasing clouds. High 54F. Winds WSW at 20 to 30 mph."], ["Thursday Night", "Mainly clear skies. Low 33F. Winds W at 10 to 15 mph."], ["Friday", "Mainly sunny. High 51F. Winds NW at 10 to 20 mph."], ["Friday Night", "Clear skies. Low 28F. Winds light and variable."], ["Saturday", "Sunny. High 51F. Winds WSW at 5 to 10 mph."], ["Saturday Night", "Clear. Low 32F. Winds light and variable."], ["Sunday", "Sunny skies. High 63F. Winds SW at 5 to 10 mph."], ["Sunday Night", "Clear. Low 39F. Winds light and variable."], ["Monday", "Generally sunny despite a few afternoon clouds. High near 65F. Winds SW at 10 to 15 mph."], ["Monday Night", "Some clouds early will give way to generally clear conditions overnight. Low 36F. Winds WSW at 5 to 10 mph."], ["Tuesday", "Mainly sunny. High 58F. Winds NNW at 5 to 10 mph."], ["Tuesday Night", "Mostly clear skies. Low 34F. Winds light and variable."], ["Wednesday", "Intervals of clouds and sunshine. High 57F. Winds ESE at 5 to 10 mph."], ["Wednesday Night", "Overcast with rain showers at times. Low near 40F. Winds light and variable. Chance of rain 60%."]], durm.forecast
   end
 
+  def test_astronomy_class_exists
+    durm = Astronomy.new()
+    assert durm
+  end
+
+  def test_astronomy_returns_sunrise
+    durm = Astronomy.new()
+    assert_equal "Sunrise is at 6:55 AM.", durm.sunrise
+  end
 end
