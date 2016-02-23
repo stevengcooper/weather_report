@@ -84,4 +84,9 @@ class WeatherUndergroundTest < Minitest::Test
     cane = CurrentHuricane.new()
     assert cane
   end
+
+  def test_hurricane_class_returns_all_current_hurricanes
+    cane = CurrentHuricane.new()
+    assert_equal "Storm Invest 90C is at category . It is currently at 3.7 lattitude and -171.3 longitude and is traveling NNE at 5 Mph. It has sustained winds of 35 Mph, and gusts have been recorded at  Mph.", cane.current_hurricanes
+  end
 end
