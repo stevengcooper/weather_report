@@ -74,4 +74,9 @@ class WeatherUndergroundTest < Minitest::Test
     durm = Astronomy.new()
     assert_equal "Sunrise is at 6:55 AM.", durm.sunrise
   end
+
+  def test_astronomy_returns_sunset
+    durm = Astronomy.new()
+    assert_equal "Sunset is at 6:03 PM.", durm.sunset
+  end
 end

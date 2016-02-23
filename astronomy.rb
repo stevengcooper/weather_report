@@ -19,6 +19,11 @@ class Astronomy
     hour = @results["sun_phase"]["sunset"]["hour"]
     minute = @results["sun_phase"]["sunset"]["minute"]
     hour = hour.to_i - 12
-    return "Sunset is at #{hour}:#{minute.to_i} PM."
+    minute = minute.to_i
+    if minute < 10
+      return "Sunset is at #{hour}:0#{minute} PM."
+    else
+     return "Sunset is at #{hour}:#{minute} PM."
+   end
   end
 end
