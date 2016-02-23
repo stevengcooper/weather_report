@@ -2,16 +2,15 @@ require 'byebug'
 require 'HTTParty'
 require './conditions'
 require './current_hurricane'
-require './forecast_ten_day'
+require './forecast'
 require './astronomy'
 require './alerts'
 
 
-puts "What is your zip code?"
-location = gets.chomp
 
 
-c = Conditions.new(zip_code)
+
+c = Conditions.new(location)
 
 puts "Location: #{c.location}"
 puts "Current Temp (F) #{c.tempature}"
