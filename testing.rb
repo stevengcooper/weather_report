@@ -4,7 +4,7 @@ require 'byebug'
 require 'json'
 require './condition.rb'
 require 'httparty'
-# require './current_hurricane.rb'
+require './current_hurricane.rb'
 require './forecast.rb'
 require './astronomy.rb'
 require './alerts.rb'
@@ -78,5 +78,10 @@ class WeatherUndergroundTest < Minitest::Test
   def test_astronomy_returns_sunset
     durm = Astronomy.new()
     assert_equal "Sunset is at 6:03 PM.", durm.sunset
+  end
+
+  def test_huricane_class_exists
+    cane = CurrentHuricane.new()
+    assert cane
   end
 end
