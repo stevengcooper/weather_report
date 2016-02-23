@@ -8,6 +8,8 @@ require './current_hurricane.rb'
 require './forecast.rb'
 require './astronomy.rb'
 require './alerts.rb'
+require './user.rb'
+# require './command_line.rb'
 
 class WeatherUndergroundTest < Minitest::Test
 
@@ -88,5 +90,12 @@ class WeatherUndergroundTest < Minitest::Test
   def test_hurricane_class_returns_all_current_hurricanes
     cane = CurrentHuricane.new()
     assert_equal "Storm Invest 90C is at category . It is currently at 3.7 lattitude and -171.3 longitude and is traveling NNE at 5 Mph. It has sustained winds of 35 Mph, and gusts have been recorded at  Mph.", cane.current_hurricanes
+  end
+
+  def test_user_class_can_return_corrected_location_format
+    person = User.new("Durham, NC")
+    person2 = User.new("Durham, North Carolina")
+    assert_equal "NC/Durham", person.format_location
+    assert_equal "NC/Durham", person2.format_location
   end
 end
