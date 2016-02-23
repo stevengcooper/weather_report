@@ -1,7 +1,7 @@
 require 'byebug'
 require 'httparty'
 require './condition'
-# require './current_hurricane.rb'
+require './current_hurricane.rb'
 require './forecast'
 require './astronomy'
 require './alerts'
@@ -34,5 +34,5 @@ puts f.forecast
 alert = Alert.new(location)
 puts alert.alert_exists
 
-# cane = CurrentHuricane.new()
-# puts cane.current_hurricane
+cane = CurrentHuricane.new()
+puts cane.current_hurricane
